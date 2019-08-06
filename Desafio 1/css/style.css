@@ -1,0 +1,45 @@
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+body{
+	background-color: #FFF;
+    display: grid; 
+}
+
+header{
+    margin-top: 50px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+/********************* DIV Coração ************************/
+
+/* Triangulo */
+.coracao {
+    background-color: red;
+    height: 200px;
+    transform: rotate(-45deg);
+    width: 200px;
+    position: relative;
+}
+
+/* Inserido dois quadrados entre o conteúdo */
+
+.coracao:before,
+.coracao:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.coracao:before {
+    top: -100px;
+}
+
+.coracao:after {
+    left: 100px;
+}
