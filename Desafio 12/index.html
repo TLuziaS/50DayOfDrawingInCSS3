@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Desafio 12 - Rosto de Paisagem </title>
+
+<style>
+	*{
+		padding: 0 auto;
+		margin: 0 auto;
+	}
+
+	body {
+		background: #a9edf5;
+	}
+
+	.rosto{
+		display: block;
+		width: 200px;
+		height: 200px;
+		background-color: gold;
+		position: relative;
+		border-radius: 50%;
+		box-shadow: -10px 10px 10px rgba(0,0,0,0.25); 
+	}
+
+	.rosto:after,.rosto:before{
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		border-radius: 8px;
+		background-color: #000;
+		position: absolute;
+		top: 60px;
+	}
+
+	.rosto:after{
+		left: 50px;
+	}
+
+	.rosto:before{
+		right: 50px;
+	}
+
+	.boca{
+		display: block;
+		width: 75px;
+		height: 15px;
+		border-radius: 8px;
+		background-color: #000;
+		position: absolute;
+		top: 130px;
+		left: 60px;
+	}
+
+	header{
+		height: 80px;
+		margin-top: 30px;
+		text-align: center;
+	}
+
+</style>
+	</head>
+
+	<body>
+		<header>
+			<h1> Desafio 12 - Rosto de Paisagem </h1>
+		</header>
+		
+		<div class="rosto">
+			<div class="boca"> </div>
+		</div>
+	</body>
+</html>
