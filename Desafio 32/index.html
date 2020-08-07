@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> Logo da Apple Store </title>
+
+    <link rel="shortcut icon" href="AppleStore.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+
+        body {
+            display: grid;
+            background-color: #ffffff;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .quadrado {
+            margin-top: 35px;
+            padding: 45px 40px;
+            border-radius: 40px;
+            background-color: #00d9ed;
+        }
+
+        .icone {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .icone .fa {
+            font-size: 50px;
+            color: #00d9ed;
+            line-height: 100px;
+        }
+
+        .icone:before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            left: 26%;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Desafio 32 - Logo da Apple Store </h1>
+    </header>
+
+
+    <div class="quadrado">
+        <div class="icone">
+            <i class="fa fa-apple" aria-hidden="true"></i>
+        </div>
+    </div>
+
+</body>
+
+</html>

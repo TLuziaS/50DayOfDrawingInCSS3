@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Desafio 4 - Quadrado 3D </title>
 
-		<style>
-			*{
-				margin: 0 auto;
-				padding: 0 auto;
-				background-color: #FFF;
-			}
+<head>
+	<meta charset="UTF-8">
+	<title> Quadrado com 4 Camadas </title>
 
-			header{
-				margin-top: 40px;
-				text-align: center;
-				height: 100px;
-			}
+	<link rel="shortcut icon" href="Quadrado.png" type="image/x-icon">
 
-			.quadrado-azul{
-				position: absolute;
-				left: 230px;
-				background-color: #1E90FF;
-				height: 200px;
-				width: 200px;
-				box-shadow: 10px 10px 1px #000000;  
-				z-index: 11;
-			}
+	<style>
+		* {
+			margin: 0 auto;
+			padding: 0 auto;
+			background-color: #FFF;
+		}
 
-			.quadrado-rosa{
-				position: relative;
-				z-index: 2;
-				bottom: -23px;
-				left: 10px;
-				background-color: #ea00ff;
-				height: 195px;
-				width: 199px;
-				box-shadow: 10px 10px 1px #9ACD32;
-			}
-			
+		header {
+			margin-top: 40px;
+			text-align: center;
+			height: 100px;
+		}
 
-		</style>
-	</head>
+		section {
+			height: 225px;
+			width: 225px;
+		}
 
-	<body>
+		.quadrado-azul {
+			position: relative;
+			left: -40px;
+			background-color: #1E90FF;
+			height: 200px;
+			width: 200px;
+			box-shadow: 9px 10px 1px #000000;
+			z-index: 11;
+		}
 
-		<header>
-			<h1> Desafio 4 - Quadrado 3D </h1>
-		</header>
+		.quadrado-rosa {
+			position: relative;
+			z-index: 2;
+			bottom: 180px;
+			left: -20px;
+			background-color: #ea00ff;
+			height: 195px;
+			width: 199px;
+			box-shadow: 10px 10px 1px #9ACD32;
+		}
+	</style>
+</head>
 
+<body>
+
+	<header>
+		<h1> Desafio 4 - Quadrado com 4 Camadas </h1>
+	</header>
+
+	<section>
 		<div class="quadrado-azul"></div>
-		<div class="quadrado-rosa"> </div>	
+		<div class="quadrado-rosa"> </div>
+	</section>
 
+</body>
 
-	</body>
 </html>

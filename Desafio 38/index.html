@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+
+    <style>
+        * {
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+
+        body {
+            display: grid;
+            background-color: #cecece;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+        }
+
+        #conteudo {
+            width: 500px;
+            height: 300px;
+        }
+
+        .envolpe {
+            width: 350px;
+            height: 300px;
+            background-color: #ffffff;
+            border-left: 50px solid #e75a4d;
+            border-right: 50px solid #e75a4d;
+            box-sizing: 0 10px 15px rgba(0, 0, 0, .2);
+            border-radius: 35px;
+            transition: 1s;
+            position: relative;
+        }
+
+        .envolpe::before {
+            width: 270px;
+            height: 50px;
+            content: '';
+            position: absolute;
+            top: 71px;
+            left: 131px;
+            background-color: #e75a4d;
+            border-radius: 35px 0 0 35px;
+            transform: rotate(140deg);
+        }
+
+        .envolpe::after {
+            width: 275px;
+            height: 50px;
+            content: '';
+            position: absolute;
+            top: 72px;
+            right: 126px;
+            background-color: #e75a4d;
+            border-radius: 0 35px 35px 0;
+            transform: rotate(-140deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Desafio 38 - Logo do Gmail </h1>
+    </header>
+
+    <div id="conteudo">
+        <div class="envolpe"> </div>
+    </div>
+
+</body>
+
+</html>
