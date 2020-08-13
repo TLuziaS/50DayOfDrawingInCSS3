@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Relíquias da Morte </title>
+
+    <style>
+        * {
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+
+        body {
+            color: #ffffff;
+            display: grid;
+            background: #000;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 50px;
+        }
+
+        .triangulo {
+            width: 0;
+            height: 0;
+            border-right: 80px solid transparent;
+            border-bottom: 140px solid #000;
+            border-left: 80px solid transparent;
+            position: relative;
+        }
+
+        .triangulo:after {
+            border-right: 90px solid transparent;
+            border-bottom: 160px solid #fff;
+            border-left: 90px solid transparent;
+            position: absolute;
+            top: -13.5px;
+            left: -90px;
+            z-index: -1;
+            content: '';
+        }
+
+        .reta {
+            border-left: 5px solid #fff;
+            height: 150px;
+            position: relative;
+            top: -108px;
+            left: -2px;
+        }
+
+        .circulo {
+            width: 86px;
+            height: 86px;
+            border: 5px solid #ffffff;
+            border-radius: 50%;
+            position: relative;
+            top: 46px;
+            left: -48px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Desafio 44: Relíquias da Morte </h1>
+    </header>
+
+    <div class="triangulo">
+        <div class="circulo"></div>
+        <div class="reta"></div>
+
+    </div>
+
+</body>
+
+</html>
