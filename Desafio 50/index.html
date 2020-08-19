@@ -24,13 +24,60 @@
             padding: 50px;
         }
 
+        #cabeca {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            border: 2px solid #000;
+        }
+
+        #corpo {
+            height: 200px;
+            width: 3px;
+            background-color: #000000;
+        }
+
+        #braco {
+            height: 125px;
+            width: 2px;
+            background-color: #000000;
+            transform: rotate(90deg);
+        }
+
+        .perna1 {
+            height: 85px;
+            width: 2px;
+            background-color: #000000;
+            transform: rotate(49deg);
+            position: relative;
+            top: -15px;
+            left: -33px;
+        }
+
+        .perna2 {
+            height: 86px;
+            width: 2px;
+            background-color: #000000;
+            transform: rotate(-49deg);
+            position: relative;
+            top: -100px;
+            right: -33px;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1> Desafio 50 - Homem Palito  </h1>
+        <h1> Desafio 50 - Homem Palito </h1>
     </header>
+
+    <div id="cabeca"> </div>
+    <div id="corpo">
+        <div id="braco"></div>
+    </div>
+
+    <div class="perna1"></div>
+    <div class="perna2"></div>
 
 </body>
 
