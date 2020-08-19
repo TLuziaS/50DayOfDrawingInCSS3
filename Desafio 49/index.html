@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> </title>
+    <title> Emoticon Entendiado </title>
+
+    <link rel="shortcut icon" href="Entediado.png" type="image/x-icon">
 
     <style>
         * {
@@ -13,23 +15,66 @@
         }
 
         body {
-            display: grid;
-            background-color: #ffffff;
+            background: #a9edf5;
+        }
+
+        .rosto {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: #ffcf30;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: -8px 3px 5px rgba(0, 0, 0, 0.25);
+        }
+
+        .rosto:after,
+        .rosto:before {
+            content: '';
+            display: block;
+            width: 35px;
+            height: 15px;
+            border-radius: 8px;
+            background-color: #87550f;
+            position: absolute;
+            top: 60px;
+        }
+
+        .rosto:after {
+            left: 50px;
+        }
+
+        .rosto:before {
+            right: 50px;
+        }
+
+        .boca {
+            display: block;
+            width: 95px;
+            height: 15px;
+            border-radius: 8px;
+            background-color: #87550f;
+            position: absolute;
+            top: 120px;
+            left: 53px;
         }
 
         header {
+            height: 80px;
+            margin-top: 30px;
             text-align: center;
-            padding: 50px;
         }
-
     </style>
 </head>
 
 <body>
     <header>
-        <h1> Desafio -  </h1>
+        <h1> Desafio 49 - Rosto Entendiado </h1>
     </header>
 
+    <div class="rosto">
+        <div class="boca"> </div>
+    </div>
 </body>
 
 </html>
