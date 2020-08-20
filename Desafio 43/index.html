@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Emoticon Inoperante </title>
 
-    <title> Losango </title>
-
-
-    <link rel="shortcut icon" href="Losango.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="inoperante.jpg" type="image/x-icon">
 
     <style>
         * {
@@ -17,39 +15,67 @@
         }
 
         body {
-            display: grid;
-            background-color: #ffffff;
+            background: #a9edf5;
         }
 
         header {
+            height: 80px;
+            margin-top: 30px;
             text-align: center;
-            padding: 50px;
         }
 
-        .parte-1-losango {
-            border-bottom: 100px solid green;
-            border-top: 0px solid transparent;
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
+        .rosto {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: #ffcf30;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: -8px 3px 5px rgba(0, 0, 0, 0.25);
         }
 
-        .parte-2-losango {
-            border-bottom: 0px solid transparent;
-            border-top: 100px solid green;
-            border-left: 100px solid transparent;
-            border-right: 100px solid transparent;
+        .boca {
+            display: block;
+            width: 90px;
+            height: 5px;
+            border-radius: 8px;
+            background-color: #87550f;
+            position: absolute;
+            top: 135px;
+            left: 53px;
+        }
+
+        p {
+            color: #87550f;
+            font-family: cursive;
+            font-size: 35px;
+            font-weight: 900;
+        }
+
+        .olho-1 {
+            position: relative;
+            top: 45px;
+            left: 130px;
+        }
+
+        .olho-2 {
+            position: relative;
+            top: -1px;
+            left: 40px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1> Desafio 43 - Figura Geometrica Losango </h1>
+        <h1> Desafio 49 - Emoticon Inoperante </h1>
     </header>
 
-    <div class="parte-1-losango"> </div>
-    <div class="parte-2-losango"> </div>
-
+    <div class="rosto">
+        <p class="olho-1"> X </p>
+        <p class="olho-2"> X </p>
+        <div class="boca"> </div>
+    </div>
 </body>
 
 </html>
