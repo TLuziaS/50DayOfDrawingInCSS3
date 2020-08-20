@@ -12,7 +12,7 @@ Normalmente quando iniciamos o estudo de alguma coisa queremos o resultado tão 
 - **Desenhos:** Todos retirados da internet no Geral.
 - **Nível:** Básico, Médio e Alto.
 
-### Ferramentas/Codificação Utilizadas:
+### Ferramentas/Tecnologia Utilizadas:
 - Sublime Text;
 - VSCode;
 - CSS3 e HTML5.
