@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Netflix </title>
 
+
+    <link rel="shortcut icon" href="Netflix.jpg" type="image/x-icon">
+
     <style>
         * {
             padding: 0 auto;
@@ -14,12 +17,13 @@
 
         body {
             display: grid;
-            background-color: grey;
+            color: #ffffff;
+            background-color: #000000;
         }
 
         header {
             text-align: center;
-            padding: 50px;
+            padding: 60px;
         }
 
         .netflix{
@@ -32,9 +36,28 @@
         .netflix span{
             position: absolute;
             top: 0;
-            width: 120px;
+            width: 100px;
             height: 100%;
             background-color: #ffffff;
+        }
+
+        .netflix span:nth-child(1){
+            background-color: #b00612;
+            left: 0;
+        }
+
+        .netflix span:nth-child(2){
+            background-color: #e50815;
+            left: 0;
+            z-index: 1;
+            transform-origin: top left;
+            transform: skewX(25deg);
+
+        }
+
+        .netflix span:nth-child(3){
+            background-color: #b00612;
+            right: 0;
         }
 
     </style>
